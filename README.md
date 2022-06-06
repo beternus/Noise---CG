@@ -3,6 +3,7 @@
 **Exercício de geração procedural de texturas**
 
 Disciplina: Computação Gráfica
+
 Autor: Bernardo Ternus de Abreu
 
 **Compilação da Biblioteca Libnoise:**
