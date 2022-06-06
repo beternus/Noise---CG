@@ -7,10 +7,9 @@ Disciplina: Computação Gráfica
 Autor: Bernardo Ternus de Abreu
 
 **Compilação da Biblioteca Libnoise:**
-
-# Primeiramente, inicializar o submodule que contém a libnoise
+Primeiramente, inicializar o submodule que contém a libnoise
 $ git submodule update --init
-# Rodar script gerado para compilar a biblioteca
+Rodar script gerado para compilar a biblioteca
 $ ./build-libnoise.sh
 
 Compilando e executando o código da geração:
