@@ -84,23 +84,18 @@ void RenderHeightMap(utils::NoiseMap heightMap, std::string filename){
 
 int main (int argc, char** argv)
 {
-	 int a;   
-    	 printf("Selecione a opção: a, b ou c /n");
-         scanf("%c", &a);
-         printf("%i\n", a);
-    
-         if  (a=='a') 
-         {
-           	utils::NoiseMap heightMap;
+	utils::NoiseMap heightMap;
 	float bounds1[4] = {2.0, 6.0, 1.0, 5.0};
 	float bounds2[4] = {7.0, 11.0, 1.0, 5.0};
-	float bounds3[4] = {2.0, 6.0, 6.0, 10.0};	
+	float bounds3[4] = {2.0, 6.0, 1.0, 5.0};	
 	float bounds4[4] = {7.0, 11.0, 6.0, 10.0};
 	
 	//Modo padrão
 	//heightMap = BuildAHeightMap (1024, 1024, bounds);
-
 	//Para criar o mapa com projeção esférica
+	
+	
+	
 	heightMap = BuildASphericalHeightMap(1024, 1024, bounds1);
 	heightMap = BuildASphericalHeightMap(1024, 1024, bounds2);
 	heightMap = BuildASphericalHeightMap(1024, 1024, bounds3);
@@ -114,96 +109,6 @@ int main (int argc, char** argv)
    std::cout << "Success!\n";
   
    getchar();
-		 
+
   return 0;
-         } 
-         else if (a=='b')
-         {
-	
-	int main (int argc, cha** argv)
-	{
-	module::RidgeMulti mountainTerrain;
-	utils::NoiseMap heightMap;
-	utils::NoiseMapBuilderPlane heightMapBuilder;
-	module::RidgedMulti mountainTerrain;
-	module::Billow baseFlatTerrain;
-	utils::NoiseMap heightMap;
-	utils::NoiseMapBuilderPlane heightMapBuilder;
-	module::Billow baseFlatTerrain;
-	baseFlatTerrain.SetFrequency(2.0);
-	utils::NoiseMapheightMap;
-	utils::NoiseMapBuilderPlane heightMapBuilder;
-	heightMapBuilder.SetSourceModule (baseFlatTerrain);
-	heightMapBuilder.SetDestNoiseMap (heightMap);
-	heightMapBuilder.SetDestSize (256, 256);
-	baseFlatTerrain.SetFrequency (2.0);
-	module::ScaleBias flatTerrain;
-	utils::NoiseMap heightMap;
-	utils::NoiseMapBuilderPlane heightMapBuilder;
-	module::ScaleBias flatTerrain;
-	flatTerrain.SetSourceModule (0, baseFlatTerrain);
-	module::ScaleBias flatTerrain;
-	flatTerrain.SetSourceModule(0, baseFlatTerrain);
-	flatTerrain.SetScale (0.125);
-	flatTerrain.SetBias (-0.75);
-	heightMapBuilder.SetSourceModule (flatTerrain);
-	module::Perlin terrainType;
-	terrainType.SetFrequency(0.5);
-	terrainType.SetFrequency (0.25);
-	utils::NoiseMap heightMap;
-	utils::NoiseMapBuilderPlane heightMapBuilder;
-		
-	terrainType.SetPersistence (0.25);
-	module::Select finalTerrain;
-	finalTerrain.SetSourceModule (0, flatTerrain);
-	finalTerrain.SetSourceModule (1, mountainTerrain);
-		
-	utils::NoiseMap heightMap;
-	utils::NoiseMapBuilderPlane heightMapBuilder;
-	module::Select finalTerrain;
-	finalTerrain.SetSourceModule (0, flatTerrain);
-	finalTerrain.SetSourceModule (1, mountainTerrain);
-	finalTerrain.SetControlModule (terrainType);
-	finalTerrain.SetBounds (0.0, 1000.0);		
-	}
-		 
-	myModule.SetOctaveCount (6);	 
-	myModule.SetFrequency (1.0);
-	myModule.SetPersistence (0.5);	 
-	
-		 
-		 
-		 
-			 
-        utils::NoiseMap heightMap;
-	float bounds1[4] = {2.0, 6.0, 1.0, 5.0};
-	float bounds2[4] = {7.0, 11.0, 1.0, 5.0};
-	float bounds3[4] = {2.0, 6.0, 6.0, 10.0};	
-	float bounds4[4] = {7.0, 11.0, 6.0, 10.0};
-
-	//Modo padrão
-	//heightMap = BuildAHeightMap (1024, 1024, bounds);
-
-	//Para criar o mapa com projeção esférica
-	heightMap = BuildASphericalHeightMap(1024, 1024, bounds1);
-	heightMap = BuildASphericalHeightMap(1024, 1024, bounds2);
-	heightMap = BuildASphericalHeightMap(1024, 1024, bounds3);
-	heightMap = BuildASphericalHeightMap(1024, 1024, bounds4);
-	
-	RenderHeightMap(heightMap,"../example.bmp");
-	RenderHeightMap(heightMap,"../example2.bmp");
-	RenderHeightMap(heightMap,"../example3.bmp");
-	RenderHeightMap(heightMap,"../example4.bmp");
-	
-   std::cout << "Success!\n";
-		 
-   getchar();
-   return 0;
-         } 
-	else if (a=='c')
-         {
-          
-          }    
-}
-
 }
