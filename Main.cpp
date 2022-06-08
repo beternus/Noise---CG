@@ -87,18 +87,25 @@ int main (int argc, char** argv)
 
 	
 	utils::NoiseMap heightMap;
-	float bounds[4] = {2.0, 6.0, 1.0, 5.0};
-	float bounds2[4] = {7.0, 11.0, 6.0, 10.0};
+	float bounds1[4] = {2.0, 6.0, 1.0, 5.0};
+	float bounds2[4] = {7.0, 11.0, 1.0, 5.0};
+	float bounds3[4] = {2.0, 6.0, 1.0, 5.0};	
+	float bounds4[4] = {7.0, 11.0, 6.0, 10.0};
 	
 	//Modo padrão
 	//heightMap = BuildAHeightMap (1024, 1024, bounds);
 
 	//Para criar o mapa com projeção esférica
-	heightMap = BuildASphericalHeightMap(1024, 1024, bounds);
+	heightMap = BuildASphericalHeightMap(1024, 1024, bounds1);
 	heightMap = BuildASphericalHeightMap(1024, 1024, bounds2);
+	heightMap = BuildASphericalHeightMap(1024, 1024, bounds3);
+	heightMap = BuildASphericalHeightMap(1024, 1024, bounds4);
 	
 	RenderHeightMap(heightMap,"../example.bmp");
-
+	RenderHeightMap(heightMap,"../example2.bmp");
+	RenderHeightMap(heightMap,"../example3.bmp");
+	RenderHeightMap(heightMap,"../example4.bmp");
+	
    std::cout << "Success!\n";
   
    getchar();
