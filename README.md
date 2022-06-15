@@ -1,6 +1,4 @@
-# Noise---CG
-
-**Exercício de geração procedural de texturas**
+# Exercício de geração procedural de texturas
 
 Disciplina: Computação Gráfica
 
@@ -22,9 +20,9 @@ $ ./app
 
 **Resultados**
 
-1) Gerando 4 mapas vizinhos (4 imagens)
+1) Gerando 4 mapas vizinhos com 4 imagens
 
-2) Explorando números diferentes de oitavas, frequencia e persistência (8 imagens)
+2) Explorando números diferentes de oitavas, frequencia e persistência com 8 imagens
 
-3) Criando 2 diferentes mapeamentos de biomas (Gradientes) (2 imagens)
+3) Criando 2 diferentes mapeamentos de biomas (Gradientes) com 2 imagens
 
