@@ -32,6 +32,59 @@ $ ./app
 
 2) Explorando números diferentes de oitavas, frequencia e persistência com 8 imagens
 
+1) frequência: 0,8
+   oitavas = 4
+   persistência = 0,6
+  
+  ![oitavas 1](https://user-images.githubusercontent.com/90293389/175180483-4b9b9f47-e003-49d5-ba73-10870a62bdd4.jpeg)
+
+2) frequência: 0,7
+   oitavas = 4
+   persistência = 0,6
+   
+   ![oitavas 2](https://user-images.githubusercontent.com/90293389/175180533-b1caa609-1bf8-4665-8901-fc69bb7551ca.jpeg)
+
+3) frequência: 0,6
+   oitavas = 3
+   persistência = 0,6
+   
+   ![oitavas 3](https://user-images.githubusercontent.com/90293389/175180582-ea7310ed-7379-4938-9f3e-c974947a807a.jpeg)
+
+4) frequência = 0,6
+   oitavas = 5
+   persistência = 0,5
+   
+   ![oitavas 4](https://user-images.githubusercontent.com/90293389/175180635-189e9d8b-19b0-49fe-8dfb-5e30e3062ec3.jpeg)
+
+5) frequência = 0,5
+   oitavas = 4
+   persistência = 0,9
+   
+   ![oitavas 5](https://user-images.githubusercontent.com/90293389/175180696-b40a21f5-ac30-46c2-8f95-ece474ba8ae9.jpeg)
+
+6) frequência = 0,1
+   oitavas = 1
+   persistência = 0,1
+   
+   ![oitavas 6](https://user-images.githubusercontent.com/90293389/175180767-4ab0638f-657f-4172-839f-17d3beb7db1c.jpeg)
+
+7) frequência = 0,9
+   oitavas = 6
+   persistência = 0,9
+   
+![oitavas 7](https://user-images.githubusercontent.com/90293389/175180895-1adf9602-2ca4-48d6-b7cc-3e558a2822d1.jpeg)
+
+8) frequência = 5
+   oitavas = 4
+   persistência = 0,7
+
+![oitavas 8](https://user-images.githubusercontent.com/90293389/175180875-eee2b937-49f3-4042-8474-c95f2b398353.jpeg)
+
+
+
+
+
+
 3) Criando 2 diferentes mapeamentos de biomas (Gradientes) com 2 imagens
 
 Bioma 1 - Superficie global - 
