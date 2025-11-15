@@ -2,8 +2,6 @@
 
 Disciplina: Computação Gráfica
 
-Autor: Bernardo Ternus de Abreu
-
 **Compilação da Biblioteca Libnoise:**
 
 Primeiramente, inicializar o submodule que contém a libnoise
